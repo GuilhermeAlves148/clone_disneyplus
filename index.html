@@ -7,11 +7,26 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#" class="button button--secondary">Assine agora</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--dark">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <section class="hero">
         <div class="hero__content">
-            <h1 class="hero__content__branding">
+            <div class="hero__content__branding">
                 <img src="./dist/images/disneyplus.svg" alt="Disney+">
-            </h1>
+            </div>
             <h3 class="title--small">
                 As melhores histórias em um só lugar.
             </h3>
@@ -144,6 +159,178 @@
             *O preço pode variar caso a assinatura seja feita através de outras plataformas. 
         </p>
     </section>
-    <script src="./src/main.js"></script>
+    <section class="image-text-section">
+        <img src="src/images/tv_pc_tablet_celular.png" alt="TV, tablet, pc, celular">
+        <div class="image-text-section__text-container">
+            <h2 class="title">Assista do seu jeito</h2>
+            <p class="text--big">
+                Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de títulos em 4K não para de crescer. Além disso, para a felicidade de todos, é possível assistir em até 4 telas ao mesmo tempo.
+            </p>
+        </div>
+    </section>
+    <section class="image-text-section image-text-section--image-full-width">
+        <picture>
+            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png">
+            <img src="src/images/fundo_rei_leao.png" alt="fundo_rei_leao">
+        </picture>
+        <div class="image-text-section__text-container image-text-section--image-full-width__text-container">
+            <h2 class="title">Baixe filmes e séries</h2>
+            <p class="text--big">
+                Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.
+            </p>
+        </div>
+    </section>
+    <section class="available-devices">
+        <h2 class="title">Disponivel nos seus dispositivos favoritos</h2>
+        <ul class="available-devices__list">
+            <li class="available-devices__list__item">
+                <img src="src/images/dispositivos/computador.png" alt="computador">
+                <h4 class="title--small">Computador</h4>
+                <ul class="text">
+                    <li>Chrome OS</li>
+                    <li>Mac OS</li>
+                    <li>PC Windows</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="src/images/dispositivos/tv.png" alt="tv">
+                <h4 class="title--small">TV</h4>
+                <ul class="text">
+                    <li>Amazon Fire TV</li>
+                    <li>Android TV</li>
+                    <li>Apple TV</li>
+                    <li>Chromecast</li>
+                    <li>TVs LG</li>
+                    <li>Roku</li>
+                    <li>Samsung</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="src/images/dispositivos/videogames.png" alt="videogames">
+                <h4 class="title--small">Videogames</h4>
+                <ul class="text">
+                    <li>PS4</li>
+                    <li>PS5</li>
+                    <li>Xbox One</li>
+                    <li>Xbox Series S</li>
+                    <li>Xbos Series X</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="src/images/dispositivos/celular.png" alt="Celulares e tablets">
+                <h4 class="title--small">Celulares e tablets</h4>
+                <ul class="text">
+                    <li>Tablets Amazon Fire</li>
+                    <li>Celulares e Tablets Android</li>
+                    <li>iPhone e iPad</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section class="faq">
+        <h2 class="title">Perguntas frequentes</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    O que está incluído no Disney+?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    O Disney+ oferece: 
+                    <ul class="faq__questions__item__answer__inside">
+                        <li class="faq__questions__item__answer__inside__item">Experiência de entretenimento exclusiva.</li>
+                        <li class="faq__questions__item__answer__inside__item">As melhores histórias da Disney, Pixar, Marvel, Star Wars e National Geographic, tudo em um só lugar.</li>
+                        <li class="faq__questions__item__answer__inside__item">Downloads ilimitados em até 10 dispositivos compatíveis.</li>
+                        <li class="faq__questions__item__answer__inside__item">Mais de 300 títulos em 4K UHD e HDR.</li>
+                        <li class="faq__questions__item__answer__inside__item">A possibilidade de assistir em até 4 dispositivos compatíveis simultaneamente sem custo adicional.</li>
+                        <li class="faq__questions__item__answer__inside__item">IMAX Enhanced: disponível para alguns títulos da Marvel em dispositivos compatíveis com o Disney+.</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Já tem o Disney+ ou o Star+ e quer o combo+?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    Ao assinar o Combo+:
+                    <ul class="faq__questions__item__answer__inside">
+                        <li class="faq__questions__item__answer__inside__item">O valor da sua assinatura existente será descontado do preço do Combo+.</li>
+                        <li class="faq__questions__item__answer__inside__item">Se você assina o plano mensal, o valor que você paga mensalmente será descontado do preço do Combo+.</li>
+                        <li class="faq__questions__item__answer__inside__item">Se você tem uma assinatura anual do Disney+ cobrada diretamente pelo Disney+, não é possível mudar para o Combo+ no momento. Entre em contato com o <a href="#">suporte do Disney+</a> para conhecer suas opções.</li>
+                        <li class="faq__questions__item__answer__inside__item">Você vai receber um e-mail com os valores detalhados assim que finalizar o pagamento.</li>
+                        <li class="faq__questions__item__answer__inside__item">Lembre-se: você pode cancelar a assinatura quando quiser.</li>                        
+                    </ul>
+                    No momento, apenas a assinatura mensal do Combo+ está disponível.
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Quais formas de pagamento posso utilizar?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    Você pode utilizar: cartão de débito, cartão de crédito, PayPal, Mercado Pago, e também empresas parceiras como Google Play Store, App Store da Apple; Mercado Livre e provedores locais de TV, telefonia e internet.
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Como posso ver conteúdo com classificação indicativa até 16 e 18?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    Para poder acessar o catálogo completo que inclui conteúdo com classificação indicativa até 16 e 18, todos os usuários do Disney+ na América Latina devem atualizar as configurações de controle parental do perfil. É possível restringir o conteúdo de cada perfil e também adicionar um PIN de bloqueio. Os usuários que preferirem manter a configuração atual vão continuar aproveitando o Disney+ com a classificação indicativa até 14, podendo alterá-la a qualquer momento em "Editar Perfis".
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Onde posso assistir ao Disney+?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    O aplicativo do Disney+ está disponível em dispositivos móveis, navegadores, videogames, decodificadores e smart TVs. Confira <a href="#">a lista completa de dispositivos compatíveis na Central de Ajuda</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="dist/images/disneyplus.svg" alt="disneyplus">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="./dist/images/icones/globe.svg" alt="globe">
+                        <select>
+                            <option>English</option>
+                            <option selected>Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Termos e condições de Uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Política de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Proteção de dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Anúncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Dispositivos compativeis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Sobre o Disney+</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                ® 2024 Disney, Disney+ e The Walt Disney Company. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.
+            </p>
+            <p class="text--small">
+                Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+            </p>
+    </div>
+    </footer>
+    <script src="./dist/js/main.js"></script>
 </body>
 </html>
