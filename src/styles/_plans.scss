@@ -43,7 +43,8 @@
                 height: 84px;
 
                 @media (max-width:768px) {
-                    margin-left: -25px;
+                    max-width: 80%;
+                    margin: 0 auto;
                 }
             }
         }
